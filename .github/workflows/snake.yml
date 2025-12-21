@@ -13,6 +13,8 @@ on:
 jobs:
   generate:
     runs-on: ubuntu-latest
+    permissions:      # <--- Add this section
+      contents: write # <--- This grants push access
     timeout-minutes: 10
     steps:
       # Step 1: Checkout the repository
